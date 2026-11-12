@@ -6,6 +6,7 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Added
 
+- Pull requests get an `area/<scope>` label from their commit scope when the repository has it (`✨ feat(cli): …` gets `area/cli`), in `ship publish` and `ship label` (#127).
 - `ship preview`: the pull request `ship publish` would open (title, body, labels, base, warnings), rehearsed by the publication itself, without sending anything (#44).
 - Conflicts seen early: before pushing, `ship publish` warns when an open pull request into the same base changes the same or adjacent lines (`SHIP-W0619`), and `ship status` lists them (`ship.publish.overlaps`, on by default) (#40).
 - The pull request body sums up the diff: the files added, changed, renamed and removed, and the declarations added and removed (`ship.pullRequest.sections.changes`, on by default) (#32).
